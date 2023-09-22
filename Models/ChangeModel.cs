@@ -29,4 +29,27 @@ namespace CSharpTraining.Models
             };
         }
     }
+
+    public static class ChangeModelProduct
+    {
+        public static ProductModel Change(this ProductDto dto)
+        {
+            if (dto == null) return null;
+            return new ProductModel
+            {
+                ProductName = dto.ProductName,
+                ProductPrice = dto.ProductPrice,
+            };
+        }
+
+        public static ProductDto Change(this ProductModel model)
+        {
+            if (model == null) return null;
+            return new ProductDto
+            {
+                ProductName = model.ProductName,
+                ProductPrice = model.ProductPrice,
+            };
+        }
+    }
 }

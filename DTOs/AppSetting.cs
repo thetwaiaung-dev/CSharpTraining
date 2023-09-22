@@ -10,9 +10,9 @@ namespace CSharpTraining.DTOs
         public static SqlConnectionStringBuilder DbConnection = new SqlConnectionStringBuilder()
         {
             DataSource = ".",
-            InitialCatalog = "testdb",
+            InitialCatalog = "testing",
             UserID = "sa",
-            Password = "sa@123"
+            Password = "thetwaiaung"
         };
     }
 }
